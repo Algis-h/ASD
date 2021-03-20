@@ -1,4 +1,13 @@
-#include <stdio.h>
+#include "king.h"
+
+
+#define SIZE_X 6;
+#define SIZE_Y 6;
+
+
+
+
+
  
 int dec2bin(int dec)
 {
@@ -46,22 +55,43 @@ printf("\n");
 
 // Task 2
 
-int a, b;
-printf("Введите число:\n");
-scanf("%d", &a);
-printf("Введите степень:\n");
-scanf("%d", &b);
-printf("%d в степени %d равно: %d\n", a, b, power(a, b));
+	int a, b;
+	printf("Введите число:\n");
+	scanf("%d", &a);
+	printf("Введите степень:\n");
+	scanf("%d", &b);
+	printf("%d в степени %d равно: %d\n", a, b, power(a, b));
 
 
 // Task 3
 
-int c, d;
-printf("Введите число:\n");
-scanf("%d", &c);
-printf("Введите степень:\n");
-scanf("%d", &d);
-printf("%d в степени %d равно: %d\n", c, d, power(c, d));
+	int c, d;
+	printf("Введите число:\n");
+	scanf("%d", &c);
+	printf("Введите степень:\n");
+	scanf("%d", &d);
+	printf("%d в степени %d равно: %d\n", c, d, power(c, d));
+
+
+// Task 4
+
+	const int sizeX = SIZE_X;
+	const int sizeY = SIZE_Y;
+	int **desk = createArray(sizeX, sizeY, desk);
+
+	setObstacle(5, sizeX, sizeY, desk);
+
+	printArray(sizeX, sizeY, desk);
+
+
+	for (int i = 0; i < sizeX; ++i)
+	{
+		for (int j = 0; j < sizeY; ++j)
+		{
+			printf("%10d", move(j, i, desk));
+		}
+		printf("\n");
+	}
 
  
 return 0;
