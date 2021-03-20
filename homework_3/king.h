@@ -35,14 +35,7 @@ int move(int x, int y, int** arr)
 	
 }
 
-void clearArray(int,  int, int**);
-int getValue(int, int, int**);
-int move(int, int, int**);
-int** createArray(int, int, int **);
-void setValue(int, int, int, int **);
-int getValue(int, int, int **);
-void printArray(int, int, int **);
-void setObstacle(int, int, int, int **);
+
 
 int** createArray(const int x, const int y, int **arr)
 {
@@ -55,14 +48,7 @@ int** createArray(const int x, const int y, int **arr)
 	 return arr; 
 }
 
-void clearArray(int,  int, int**);
-int getValue(int, int, int**);
-int move(int, int, int**);
-int** createArray(int, int, int **);
-void setValue(int, int, int, int **);
-int getValue(int, int, int **);
-void printArray(int, int, int **);
-void setObstacle(int, int, int, int **);
+
 
 void clearArray(const int x, const int y, int** arr)
 {
@@ -74,14 +60,7 @@ void clearArray(const int x, const int y, int** arr)
 		}
 	}
 }
-void clearArray(int,  int, int**);
-int getValue(int, int, int**);
-int move(int, int, int**);
-int** createArray(int, int, int **);
-void setValue(int, int, int, int **);
-int getValue(int, int, int **);
-void printArray(int, int, int **);
-void setObstacle(int, int, int, int **);
+
 
 void setValue(const int x, const int y, int value,  int** arr)
 {
@@ -90,28 +69,14 @@ void setValue(const int x, const int y, int value,  int** arr)
 
 }
 
-void clearArray(int,  int, int**);
-int getValue(int, int, int**);
-int move(int, int, int**);
-int** createArray(int, int, int **);
-void setValue(int, int, int, int **);
-int getValue(int, int, int **);
-void printArray(int, int, int **);
-void setObstacle(int, int, int, int **);
+
 
 int getValue(const int x, const int y, int** arr)
 {
 	return *(*(arr + y) + x);
 }
 
-void clearArray(int,  int, int**);
-int getValue(int, int, int**);
-int move(int, int, int**);
-int** createArray(int, int, int **);
-void setValue(int, int, int, int **);
-int getValue(int, int, int **);
-void printArray(int, int, int **);
-void setObstacle(int, int, int, int **);
+
 
 void printArray(const int x, const int y, int** arr)
 {
@@ -128,14 +93,7 @@ void printArray(const int x, const int y, int** arr)
 	}
 }
 
-void clearArray(int,  int, int**);
-int getValue(int, int, int**);
-int move(int, int, int**);
-int** createArray(int, int, int **);
-void setValue(int, int, int, int **);
-int getValue(int, int, int **);
-void printArray(int, int, int **);
-void setObstacle(int, int, int, int **);
+
 
 void setObstacle(int countObstacle, const int x, const int y, int** arr)
 {
