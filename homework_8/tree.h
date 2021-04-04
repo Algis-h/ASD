@@ -236,10 +236,15 @@ void bypassRevOrderTree(Tree * tree)
 
 void freeTree(Tree * tree)
 {
-	if (tree != NULL)
+	Tree * l = tree->left;
+	Tree * r = tree->right;
+	free(tree);
+	if(l != NULL)
 	{
-		freeTree(tree->right);
-		freeTree(tree->left);
-		free(tree);
+		freeTree(l);
+	}
+	if(r != NULL)
+	{
+		freeTree(r);
 	}
 }
